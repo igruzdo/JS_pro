@@ -53,7 +53,7 @@ const renderGoodsList = (list = goods) => {
     let goodsList = list.map(
         item => renderGoodsItem(item)
         ).join('\n')
-    goodsList.insertAdjacentHTML ('beforeend',goodsList.j)
+    $goodsList.insertAdjacentHTML ('beforeend', goodsList)
 }
 
 renderGoodsList()
